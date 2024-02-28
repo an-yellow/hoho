@@ -1,0 +1,81 @@
+:root {
+    --honey-color: hsl(40, 100%, 50%);
+    --honey-hue:40;
+    --lightness-factor: 70%;
+    --darkness-factor: 30%;
+  
+    --honey-color-light: hsl(var(--honey-hue), 100%, calc(var(--lightness-factor) + 0%));
+    --honey-color-dark: hsl(var(--honey-hue), 100%, calc(var(--darkness-factor) - 0%));
+  
+    --turquoise-color: hsl(153, 100%, 50%);
+    --turquoise-hue:153;
+  
+    --turquoise-color-light: hsl(var(--turquoise-hue), 100%, calc(var(--lightness-factor) + 0%));
+    --turquoise-color-dark: hsl(var(--turquoise-hue), 100%, calc(var(--darkness-factor) - 0%));
+
+    --light-pink: hsl(300, 100%, 94%);
+  
+  }
+.button-container{
+    display: flex ;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.button{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background-color: var(--light-pink);
+    color: black;
+}
+.button.active{
+    background-color: pink;
+    color: #fff;
+}
+
+.items-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+.item{
+    margin:5px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter{
+    display: block;
+    background-color: white;
+}
+.filter:hover{
+    background-color: var(--light-pink);
+    color: black;
+}
+
+.filter.active{
+    background-color: pink;
+    color: #fff;
+}
+.filter-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:10px;
+}
+.filter-way{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
