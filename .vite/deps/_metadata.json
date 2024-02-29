@@ -1,25 +1,40 @@
 {
-  "hash": "1708f87c",
+  "hash": "e8f50b3a",
   "configHash": "3b313e4b",
-  "lockfileHash": "708e81cc",
-  "browserHash": "774e58a5",
+  "lockfileHash": "c128c10d",
+  "browserHash": "f0feb036",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "e6b982d1",
+      "fileHash": "ee3d06f1",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "79115b70",
+      "fileHash": "429e4a10",
       "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "48d90ab8",
+      "needsInterop": false
+    },
+    "react-markdown": {
+      "src": "../../node_modules/react-markdown/index.js",
+      "file": "react-markdown.js",
+      "fileHash": "c2b5b9cf",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-XFZ2DVVZ": {
-      "file": "chunk-XFZ2DVVZ.js"
+    "chunk-TDQUXRWX": {
+      "file": "chunk-TDQUXRWX.js"
+    },
+    "chunk-S63IS3LU": {
+      "file": "chunk-S63IS3LU.js"
     }
   }
 }

@@ -1,8 +1,13 @@
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-
-// https://vitejs.dev/config/
+import Markdown from '@pity/vite-plugin-react-markdown'
 export default defineConfig({
-  plugins: [react()],
-  base: '/hoho/'
+  plugins: [
+    react(),
+    Markdown({
+      // options
+    }),
+  ],
+    base: '/hoho/',
 })

@@ -1,20 +1,21 @@
 
 
+import { Link } from 'react-router-dom';
 //tạo 1 header gồm 
-
+import ukyo from '/public/ukyo-img.png';
 export default function Header() {
     return (
         <>
          <div className ='header-container'>
             <nav>
                 <ul className = 'navbar'>
-                    <li> <a href = "/index"> Home </a> </li>
+                    <li> <Link to = '/index' >Home </Link> </li>
                    
-                    <li> <a href = "/roadmaps/"> Roadmaps </a></li>
-                    <li> <a href = "/tips/"> Tips </a></li>
+                    <li> <Link to = '/roadmaps' > Roadmaps </Link></li>
+                    <li><Link to = '/tips' >Tips </Link></li>
                 </ul>
             </nav>
-            <img src = '/public/ukyo-img.png' alt = 'ukyo' />
+            <img src = {ukyo} alt = 'ukyo' />
         </div>
         </>
        

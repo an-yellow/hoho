@@ -10,11 +10,12 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/hoho'>
         <Routes>
           <Route path="/index" element={<Home/>} />
           <Route path="/" element={<Home />} />
           <Route path='/markdown/:type/:id' element={<MyReadMarkdown/>} />
+          <Route path='/an' element={<MyReadMarkdown/>} />
 
 
           <Route path='/tips' element={<Tips/>} />
